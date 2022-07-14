@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class CakeResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
+     */
+    public function toArray($request)
+    {
+        return [
+            'codigo' => $this->id,
+            'nome'   => $this->name,
+            'peso'  => $this->weight,
+            'valor'  => $this->price,
+            'quantidade'  => $this->quantity
+        ];
+    }
+}
