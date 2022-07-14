@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\CakeController;
+use App\Http\Controllers\Api\InterestedEmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::apiResource('cakes', CakeController::class);
 
-Route::post('interested_email', [InterestedEmailController::class, 'store']);
+Route::get('interested_emails', [InterestedEmailController::class, 'index']);
+Route::get('interested_emails/{id}', [InterestedEmailController::class, 'show']);
+Route::middleware('check.availability.cake')->post('interested_emails', [InterestedEmailController::class, 'store']);
