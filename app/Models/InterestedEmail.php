@@ -12,4 +12,9 @@ class InterestedEmail extends Model
     protected $table = 'interested_emails';
 
     protected $fillable = ['id', 'email', 'cake_id'];
+
+    public function cakes()
+    {
+        return $this->belongsTo(Cake::class, 'cake_id', 'id');
+    }
 }

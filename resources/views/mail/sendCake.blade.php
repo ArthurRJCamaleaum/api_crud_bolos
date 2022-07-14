@@ -1,0 +1,1 @@
+<h1>Bolo {{ $cake->name }} está disponível</h1>
