@@ -1,5 +1,5 @@
 
-# API CRUD Cake
+# API CRUD Cakes
 
 ## Instalação
 
@@ -29,8 +29,8 @@
 > > inserindo novo registro de bolo, Método POST
 ```php
 {
-	"name": "teste",
-	"weight": 100,
+    "name": "teste",
+    "weight": 100,
     "price": "12.10",
 	"quantity": 1
 }
