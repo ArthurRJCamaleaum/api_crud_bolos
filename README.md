@@ -19,13 +19,13 @@
 > - Pode ser usado com o server do próprio artisan; ```php artisan serve```
 
 ### Acessando as rotas
-> localhost/public/api/cakes
+> localhost/api-crud-cakes/public/api/cakes
 > > buscando todos registros de bolo, Método GET
 # 
-> localhost/public/api/cake/{id}
+> localhost/api-crud-cakes/public/api/cake/{id}
 > > buscando um registro de bolo, Método GET
 # 
-> localhost/public/api/cakes
+> localhost/api-crud-cakes/public/api/cakes
 > > inserindo novo registro de bolo, Método POST
 ```php
 {
@@ -36,7 +36,7 @@
 }
 ```
 # 
-> localhost/public/api/cakes/{id}
+> localhost/api-crud-cakes/public/api/cakes/{id}
 > > editando registro de bolo, Método PUT
 > Todos são opcionais
 ```php
@@ -48,17 +48,17 @@
 }
 ```
 # 
-> localhost/public/api/cakes/{id}
+> localhost/api-crud-cakes/public/api/cakes/{id}
 > > excluindo registro de bolo, Método DELETE
 
 # 
-> localhost/public/api/interested_emails
+> localhost/api-crud-cakes/public/api/interested_emails
 > > inserindo todos registros de interesse em determinado bolo, Método GET
 # 
-> localhost/public/api/interested_emails/{id}
+> localhost/api-crud-cakes/public/api/interested_emails/{id}
 > > buscando um registro de interesse em determinado bolo,, Método GET
 # 
-> localhost/public/api/interested_emails
+> localhost/api-crud-cakes/public/api/interested_emails
 > > inserindo novo registro de interesse em determinado bolo, Método POST
 ```php
 {
